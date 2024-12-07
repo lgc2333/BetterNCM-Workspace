@@ -896,6 +896,21 @@ __metadata:
     "@types/react": "npm:^16.14.0"
     "@types/react-dom": "npm:^16.9.24"
     esbuild: "npm:^0.24.0"
+    tsx: "npm:^4.19.2"
+  languageName: unknown
+  linkType: soft
+
+"better-ncm-what-is-the-volume-percentage-now@workspace:packages/What-Is-The-Volume-Percentage-Now":
+  version: 0.0.0-use.local
+  resolution: "better-ncm-what-is-the-volume-percentage-now@workspace:packages/What-Is-The-Volume-Percentage-Now"
+  dependencies:
+    "@types/node": "npm:^22.10.1"
+    "@types/react": "npm:^16.14.0"
+    "@types/react-dom": "npm:^16.9.24"
+    cross-env: "npm:^7.0.3"
+    esbuild: "npm:^0.24.0"
+    esbuild-plugin-inline-import: "npm:^1.1.0"
+    tsx: "npm:^4.19.2"
   languageName: unknown
   linkType: soft
 
@@ -1025,7 +1040,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cross-spawn@npm:^7.0.0, cross-spawn@npm:^7.0.2":
+"cross-env@npm:^7.0.3":
+  version: 7.0.3
+  resolution: "cross-env@npm:7.0.3"
+  dependencies:
+    cross-spawn: "npm:^7.0.1"
+  bin:
+    cross-env: src/bin/cross-env.js
+    cross-env-shell: src/bin/cross-env-shell.js
+  checksum: 10c0/f3765c25746c69fcca369655c442c6c886e54ccf3ab8c16847d5ad0e91e2f337d36eedc6599c1227904bf2a228d721e690324446876115bc8e7b32a866735ecf
+  languageName: node
+  linkType: hard
+
+"cross-spawn@npm:^7.0.0, cross-spawn@npm:^7.0.1, cross-spawn@npm:^7.0.2":
   version: 7.0.6
   resolution: "cross-spawn@npm:7.0.6"
   dependencies:
@@ -1313,6 +1340,13 @@ __metadata:
     is-date-object: "npm:^1.0.5"
     is-symbol: "npm:^1.0.4"
   checksum: 10c0/c7e87467abb0b438639baa8139f701a06537d2b9bc758f23e8622c3b42fd0fdb5bde0f535686119e446dd9d5e4c0f238af4e14960f4771877cf818d023f6730b
+  languageName: node
+  linkType: hard
+
+"esbuild-plugin-inline-import@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "esbuild-plugin-inline-import@npm:1.1.0"
+  checksum: 10c0/e10aa830b0e7759af9b70ffc6b70978f798777d3c9955b91769b10fbd99f6f7bb0cdb2913ca623cfc5b390d8e6053640cf9c803e1126d4d4b72603032c820dd0
   languageName: node
   linkType: hard
 

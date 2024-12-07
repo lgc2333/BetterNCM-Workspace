@@ -9,7 +9,7 @@ ignorePatterns:
   - 'dist/'
   - '.yarn/'
   - '/cache/vite/'
-  - '/js-framework/'
+  - 'js-framework/'
 
 extends:
   - '@cordisjs/eslint-config'
@@ -31,3 +31,5 @@ rules:
         - blankLine: always
           prev: '*'
           next: method
+
+  no-console: off

@@ -1,0 +1,7 @@
+[submodule "others/boilerplate"]
+	path = others/boilerplate
+	url = https://github.com/lgc2333/BetterNCM-Boilerplate
+
+[submodule "packages/6K-Labs"]
+	path = packages/6K-Labs
+	url = https://github.com/lgc2333/BetterNCM-6K-Labs

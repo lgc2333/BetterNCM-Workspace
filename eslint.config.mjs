@@ -3,12 +3,20 @@ import prettier from 'eslint-config-prettier'
 
 export default antfu(
   {
-    ignores: ['pnpm-workspace.yaml', 'types/js-framework', 'private/references'],
+    ignores: [
+      '!packages/**',
+      '!others/**',
+      'pnpm-workspace.yaml',
+      'types/js-framework',
+      'private/references',
+    ],
     markdown: false,
   },
   prettier,
   {
     rules: {
+      'no-console': 'off',
+
       'antfu/consistent-chaining': 'off',
       'antfu/consistent-list-newline': 'off',
       'antfu/if-newline': 'off',
@@ -21,9 +29,6 @@ export default antfu(
       'jsdoc/require-yields-description': 'off',
 
       'jsonc/comma-dangle': 'off',
-
-      'perfectionist/sort-imports': 'off',
-      'perfectionist/sort-named-imports': 'off',
 
       'ts/no-redeclare': ['error', { ignoreDeclarationMerge: true }],
 

@@ -3,6 +3,7 @@ cleanupUnusedCatalogs: true
 
 packages:
   - packages/*
+  - others/boilerplate
 
 catalog:
   '@antfu/eslint-config': ^9.3.0

@@ -5,6 +5,7 @@
     "lint": "eslint",
     "lint:fix": "eslint --fix",
     "format": "prettier -cw",
+    "check": "pnpm run -r check && tsc -b --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage"

@@ -1,0 +1,7 @@
+{
+  "extends": "../tsconfig.base",
+  "compilerOptions": {
+    "noEmit": true
+  },
+  "include": ["src/**/*.d.ts", "../external/js-framework/index.d.ts"]
+}

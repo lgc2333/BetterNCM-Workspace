@@ -1,3 +1,7 @@
+[submodule "external/js-framework"]
+	path = external/js-framework
+	url = https://github.com/BetterNCM/js-framework
+
 [submodule "others/boilerplate"]
 	path = others/boilerplate
 	url = https://github.com/lgc2333/BetterNCM-Boilerplate

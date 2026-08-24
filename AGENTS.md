@@ -29,3 +29,4 @@ This is a pnpm workspace for BetterNCM plugin projects, many of them as git subm
 ## Rules
 
 - Keep `AGENTS.md`s updated (including sub-projects) when you make changes.
+- If you need BetterNCM framework source, keep it at `private/references/BetterNCM`: make a depth-1 clone of `std-microblock/chromatic` with branch `v2` when missing.

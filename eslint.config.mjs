@@ -3,7 +3,7 @@ import prettier from 'eslint-config-prettier'
 
 export default antfu(
   {
-    ignores: ['pnpm-workspace.yaml', 'types/js-framework'],
+    ignores: ['pnpm-workspace.yaml', 'types/js-framework', 'private/references'],
     markdown: false,
   },
   prettier,

@@ -1,8 +1,9 @@
 import { existsSync } from 'node:fs'
 import { copyFile } from 'node:fs/promises'
 import path from 'node:path'
-//
-;(async () => {
+import process from 'node:process'
+
+async function main() {
   if (existsSync(path.join(process.cwd(), 'preview.png'))) {
     await copyFile(
       path.join(process.cwd(), 'preview.png'),
@@ -14,4 +15,6 @@ import path from 'node:path'
     path.join(process.cwd(), 'manifest.json'),
     path.join(process.cwd(), 'dist', 'manifest.json'),
   )
-})()
+}
+
+main()

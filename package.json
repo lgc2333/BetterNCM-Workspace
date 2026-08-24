@@ -1,21 +1,27 @@
 {
-  "name": "workspace-better-ncm",
-  "packageManager": "yarn@4.5.3",
   "private": true,
-  "version": "0",
-  "workspaces": [
-    "packages/*",
-    "private/*"
-  ],
+  "packageManager": "pnpm@11.23.0+sha512.f00082e5b283a199b74e079da28d155c008fe232f44c8a06ea7ddfa014ecf719fc362f790ecc67b28106ddac2afb24c49a9a079159da560b2ce7d1e98efd11af",
+  "scripts": {
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "format": "prettier -cw",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
   "devDependencies": {
-    "@cordisjs/eslint-config": "^1.1.1",
-    "@types/node": "^22.10.1",
-    "@types/react": "^16.14.0",
-    "@types/react-dom": "^16.9.24",
-    "esbuild": "^0.25.0",
-    "eslint": "^8.57.1",
-    "prettier": "^3.3.3",
-    "tsx": "^4.19.2",
-    "typescript": "^5.6.2"
+    "@antfu/eslint-config": "catalog:",
+    "@types/node": "catalog:",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "@vitest/coverage-v8": "catalog:",
+    "esbuild": "catalog:",
+    "eslint": "catalog:",
+    "eslint-config-prettier": "catalog:",
+    "happy-dom": "catalog:",
+    "prettier": "catalog:",
+    "tsx": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
   }
 }

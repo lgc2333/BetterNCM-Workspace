@@ -20,11 +20,11 @@ async function main() {
     await fs.mkdir(pluginPath, { recursive: true })
   }
 
-  for (const file of await fs.readdir('dist')) {
-    await fs
-      .copyFile(path.join('dist', file), path.join(pluginPath, file))
-      .catch(console.error)
-  }
+  await Promise.all(
+    (await fs.readdir('dist')).map((file) =>
+      fs.copyFile(path.join('dist', file), path.join(pluginPath, file)),
+    ),
+  )
 
   console.log(`Plugin ${manifest.slug} applied to BetterNCM`)
 }

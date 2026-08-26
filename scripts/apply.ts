@@ -25,6 +25,8 @@ async function main() {
       .copyFile(path.join('dist', file), path.join(pluginPath, file))
       .catch(console.error)
   }
+
+  console.log(`Plugin ${manifest.slug} applied to BetterNCM`)
 }
 
 main()

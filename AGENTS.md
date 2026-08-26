@@ -28,6 +28,7 @@ This is a pnpm workspace for BetterNCM plugin projects, many of them as git subm
 
 ## Rules
 
+- When working in a subproject, check if it has its own `AGENTS.md`, and read it first.
 - Keep `AGENTS.md`s updated (including sub-projects) when you make changes.
 - Keep reference sources under `private/references/`: BetterNCM framework source goes at `private/references/BetterNCM` as a depth-1 clone of `std-microblock/chromatic` branch `v2`; if you need other repos, also make a depth-1 clone under this directory.
 - Keep pnpm package scripts shell-neutral; use Node helper scripts for copy/mkdir work.

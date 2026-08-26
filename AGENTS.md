@@ -1,4 +1,4 @@
-# Workspace AGENTS.md
+# lgc-NB2Dev/BetterNCM-Workspace AGENTS.md
 
 ## Project Structure
 
@@ -29,8 +29,9 @@ This is a pnpm workspace for BetterNCM plugin projects, many of them as git subm
 ## Rules
 
 - Keep `AGENTS.md`s updated (including sub-projects) when you make changes.
-- If you need BetterNCM framework source, keep it at `private/references/BetterNCM`: make a depth-1 clone of `std-microblock/chromatic` with branch `v2` when missing.
-- If you need InfLink-rs source, keep it at `private/references/inflink-rs`: make a depth-1 clone of `apoint123/inflink-rs` when missing.
+- Keep reference sources under `private/references/`: BetterNCM framework source goes at `private/references/BetterNCM` as a depth-1 clone of `std-microblock/chromatic` branch `v2`; if you need other repos, also make a depth-1 clone under this directory.
+- Keep pnpm package scripts shell-neutral; use Node helper scripts for copy/mkdir work.
+- For TS/JS edits run Prettier and ESLint; for Rust edits run rustfmt and clippy.
 
 ## Commit
 

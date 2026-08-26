@@ -11,6 +11,7 @@ export default antfu(
       'private/references',
     ],
     markdown: false,
+    toml: false,
   },
   prettier,
   {

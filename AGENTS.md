@@ -30,3 +30,16 @@ This is a pnpm workspace for BetterNCM plugin projects, many of them as git subm
 
 - Keep `AGENTS.md`s updated (including sub-projects) when you make changes.
 - If you need BetterNCM framework source, keep it at `private/references/BetterNCM`: make a depth-1 clone of `std-microblock/chromatic` with branch `v2` when missing.
+- If you need InfLink-rs source, keep it at `private/references/inflink-rs`: make a depth-1 clone of `apoint123/inflink-rs` when missing.
+
+## Commit
+
+Use English conventional commit messages:
+
+```text
+type(optional scope): description
+
+- List of change descriptions, focus one point per row
+
+Optional footer(s)
+```

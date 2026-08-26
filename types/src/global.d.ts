@@ -4,9 +4,11 @@ import './ncm'
 import '../../external/js-framework/index'
 
 declare global {
+  interface BetterNCMNative {}
+
   var betterncm: typeof import('betterncm-api/index')
   var dom: typeof import('betterncm-api/utils').utils.dom
-  var betterncm_native: any
+  var betterncm_native: BetterNCMNative
   var plugin: import('plugin').NCMInjectPlugin
   var React: typeof import('react')
   var ReactDOM: typeof import('react-dom')

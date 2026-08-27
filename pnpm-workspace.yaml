@@ -13,6 +13,7 @@ catalog:
   '@vitest/coverage-v8': ^4.1.11
   cross-env: ^10.1.0
   esbuild: ^0.28.2
+  vite: ^7.3.6
   esbuild-plugin-inline-import: ^1.1.0
   eslint: ^10.9.0
   eslint-config-prettier: ^10.1.8
